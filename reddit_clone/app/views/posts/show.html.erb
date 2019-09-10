@@ -1,0 +1,9 @@
+<h2><%= @post.title %></h2>
+
+<p><%= @post.content %></p>
+
+<form action="<%= edit_post_url(@post) %>" method="GET">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+<input type="submit" value="Edit Post">
+
+</form>
